@@ -1,21 +1,21 @@
 $brand-font-family: 'Open Sans', Arial, sans-serif;
-
-$brand-color: #ED6F00;
+// 5CE07B
+$brand-color: #5CE07B;
 $brand-color-lighter: desaturate(lighten($brand-color, 50%), 20%);
-$brand-neutral-colors: (#646569, #004876, #004876);
-$brand-accent-colors: (#9fd4c9, #d5d848);
+$brand-neutral-colors: (#637A75, #45604B, #36AD95);
+$brand-accent-colors: (#36AD95, #A736AD);
 $brand-status-colors: (
-  critical: #dd3000,
-  error: #dd3000,
+  critical: #931F29,
+  error: #931F29,
   warning: #f0c954,
-  ok: #008375,
-  unknown: #C3C5C8,
-  disabled: #C3C5C8
+  ok: #62F759,
+  unknown: #A3E5B2,
+  disabled: #A3E5B2
 );
 $brand-link-color: $brand-color;
-$brand-grey-colors: (#000001, #646569, #C3C5C8, #F6F6F7);
-$brand-graph-colors: (#2E7CBE, #99DAF8, #F1F9F7, #F9F9EC);
-$focus-border-color: #2E7CBE;
+$brand-grey-colors: (#2F3A38, #4E605D, #6D8781, #A1C6BE);
+$brand-graph-colors: (#36AD95, #A736AD, #E497C4, #E05C67);
+$focus-border-color: #36AD95;
 
 @import 'grommet/scss/grommet-core/settings';
 
