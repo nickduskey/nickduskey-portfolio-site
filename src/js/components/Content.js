@@ -12,6 +12,13 @@ import Title2 from '../sections/Title2';
 import Title3 from '../sections/Title3';
 import Intro from '../sections/Intro';
 import End from '../sections/End';
+import AdvancedSDWAN from '../sections/AdvancedSDWAN';
+import Analyzely from '../sections/Analyzely';
+import CincyBrewScene from '../sections/CincyBrewScene';
+import NaaS from '../sections/NaaS';
+import TagDeploy from '../sections/TagDeploy';
+import TagInspector from '../sections/TagInspector';
+import TagInspectorRealtime from '../sections/TagInspectorRealtime';
 
 export default class Content extends Component {
   shouldComponentUpdate(nextProps, nextState) {
@@ -33,15 +40,15 @@ export default class Content extends Component {
           colorIndex="light-1">
           <Tabs responsive={false} justify="center">
 
-            <Tab title="Tab 1">
-              <Box className="infographic__slide" full="horizontal">
-                <span>A Tab component</span>
+            <Tab title="CincyBrewScene">
+              <Box className="infographic__slide" full="horizontal" align="center" appCentered={true}>
+                <CincyBrewScene />
               </Box>
             </Tab>
 
-            <Tab title="Tab 2">
-              <Box className="infographic__slide">
-                <span>Another Tab</span>
+            <Tab title="Tag Deploy">
+              <Box className="infographic__slide" full="horizontal" align="center" appCentered={true}>
+                <TagDeploy />
               </Box>
             </Tab>
 
@@ -54,15 +61,15 @@ export default class Content extends Component {
           colorIndex="light-2">
           <Tabs responsive={false} justify="center">
 
-            <Tab title="Tab 3">
-              <Box className="infographic__slide" full="horizontal">
-                <span>A Tab component</span>
+            <Tab title="Network as a Service">
+              <Box className="infographic__slide" full="horizontal" align="center" appCentered={true}>
+                <NaaS />
               </Box>
             </Tab>
 
-            <Tab title="Tab 4">
+            <Tab title="Advanced SD-WAN">
               <Box className="infographic__slide">
-                <span>Another Tab</span>
+                <AdvancedSDWAN />
               </Box>
             </Tab>
           </Tabs>
@@ -73,17 +80,25 @@ export default class Content extends Component {
         <InfographicSection className="infographic__section infographic__section--3"
           colorIndex="light-1">
           <Tabs responsive={false} justify="center">
-            <Tab title="Tab 5">
-              <Box className="infographic__slide" full="horizontal">
-                <span>A Tab component</span>
+
+            <Tab title="Analyze.ly">
+              <Box className="infographic__slide" full="horizontal" align="center" appCentered={true}>
+                <Analyzely />
               </Box>
             </Tab>
 
-            <Tab title="Tab 6">
+            <Tab title="Tag Inspector">
               <Box className="infographic__slide">
-                <span>Another Tab</span>
+                <TagInspector />
               </Box>
             </Tab>
+
+            <Tab title="Tag Inspector Realtime">
+              <Box className="infographic__slide">
+                <TagInspectorRealtime />
+              </Box>
+            </Tab>
+
           </Tabs>
         </InfographicSection>
 
