@@ -1,0 +1,25 @@
+div[role=tablist] {
+  width: 100%;
+}
+
+.grommetux-tabs {
+  border-bottom: none;
+  margin-bottom: 24px;
+  color: $text-color;
+
+  .grommetux-tab__label {
+    color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+  }
+
+  .grommetux-tab--active .grommetux-tab__label,
+  .grommetux-tab--active .grommetux-tab__link:hover .grommetux-tab__label {
+    color: $text-color;
+    border-color: $brand-color;
+  }
+
+  .grommetux-tab:hover .grommetux-tab__label {
+    border-color: $brand-color;
+  }
+}
