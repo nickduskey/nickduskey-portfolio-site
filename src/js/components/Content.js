@@ -21,6 +21,11 @@ import TagInspector from '../sections/TagInspector';
 import TagInspectorRealtime from '../sections/TagInspectorRealtime';
 
 export default class Content extends Component {
+  constructor(props) {
+    super(props);
+
+  }
+
   shouldComponentUpdate(nextProps, nextState) {
     if (this.props.layout !== nextProps.layout) return true;
     else return false;
@@ -101,7 +106,6 @@ export default class Content extends Component {
 
           </Tabs>
         </InfographicSection>
-
         <End onEndClick={this._onEndClick} />
       </div>
     );

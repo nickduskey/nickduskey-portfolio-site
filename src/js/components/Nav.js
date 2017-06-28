@@ -57,7 +57,7 @@ export default class Nav extends Component {
           align={"center"}>
           <div className="share">
             <Headline size={"large"} strong={true}>
-              Thanks for checking out my portfolio, I'm glad you enjoyed it.
+              Share the product love.
             </Headline>
             <div className="share__icons">
               <SocialShare type="email"
@@ -87,8 +87,7 @@ export default class Nav extends Component {
           responsive={false} colorIndex="light-1" pad="medium">
           <Menu
             responsive={true}
-            label={<MenuIcon />}
-            inline={true}
+            icon={<MenuIcon/>}
             direction="row"
           >
             <Anchor href="#">
