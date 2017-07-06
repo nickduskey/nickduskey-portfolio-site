@@ -6,7 +6,7 @@ import Heading from 'grommet/components/Heading';
 
 const Analyzely = () => (
   <Box direction="row" justify="center" full="horizontal" align="center">
-        <Card thumbnail='http://via.placeholder.com/350x350'
+        <Card thumbnail='images/analyzely.jpg'
           heading='Analyze.ly'
           description='Automatically upload third party data to Google Analytics.'
           link={<Anchor href='http://analyze.ly/'

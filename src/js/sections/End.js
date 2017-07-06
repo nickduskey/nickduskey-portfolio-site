@@ -152,21 +152,23 @@ export default class End extends Component {
       </div>
     ) : undefined;
     return (
-      <InfographicSection className="infographic__section infographic__section--end"
-        colorIndex="light-2">
-        {contactModal}
-        <Box direction="row" justify="center" align="center">
-          <Box pad="large" alignSelf="start">
-            <Group size="huge" colorIndex="neutral-2" />
+      <div id="contact-section">
+        <InfographicSection className="infographic__section infographic__section--end"
+          colorIndex="light-2">
+          {contactModal}
+          <Box direction="row" justify="center" align="center">
+            <Box pad="large" alignSelf="start">
+              <Group size="huge" colorIndex="neutral-2" />
+            </Box>
+            <Box>
+              <Headline size="large">Let me know if you like what you saw here.</Headline>
+              <Button onClick={this._onContactClick} label="Get in touch"
+                primary={true} />
+            </Box>
           </Box>
-          <Box>
-            <Headline size="large">Let me know if you like what you saw here.</Headline>
-            <Button onClick={this._onContactClick} label="Get in touch"
-              primary={true} />
-          </Box>
-        </Box>
-        <EndButton onClick={this.props.onEndClick}/>
-      </InfographicSection>
+          <EndButton onClick={this.props.onEndClick}/>
+        </InfographicSection>
+      </div>
     );
   };
 };

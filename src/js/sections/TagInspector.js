@@ -6,7 +6,7 @@ import Heading from 'grommet/components/Heading';
 
 const TagInspector = () => (
   <Box direction="row" justify="center" full="horizontal" align="center">
-        <Card thumbnail='http://via.placeholder.com/350x350'
+        <Card thumbnail='images/taginspector.gif'
           heading='Tag Inspector'
           description='Scan your website for marketing tags, validate results.'
           link={<Anchor href='https://taginspector.com'

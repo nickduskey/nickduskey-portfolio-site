@@ -29,10 +29,10 @@ export default function Title1 () {
           <Value
             value={5}
             colorIndex="grey-1"
-            size="large"
+            size="xlarge"
           />
         </Box>
-        <Heading className={`${CLASS_ROOT}__stat-desc`} tag="h4" strong={true}>New S/P/IaaS products launched.</Heading>
+        <Heading className={`${CLASS_ROOT}__stat-desc`} tag="h4" strong={true}>New technology products launched.</Heading>
       </Box>
       <Box pad={{vertical: "medium", between: "medium"}} direction="column"
          className={`${CLASS_ROOT}__col-1`}justify="center">

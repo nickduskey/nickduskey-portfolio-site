@@ -6,7 +6,7 @@ import Heading from 'grommet/components/Heading';
 
 const NaaS = () => (
   <Box direction="row" justify="center" full="horizontal" align="center">
-        <Card thumbnail='http://via.placeholder.com/350x350'
+        <Card thumbnail='images/naas.png'
           heading='Network as a Service'
           description='Fully managed enterprise network offered as a service.'
           link={<Anchor href='https://www.cincinnatibell.com/business/internet/managed-cloud-network'

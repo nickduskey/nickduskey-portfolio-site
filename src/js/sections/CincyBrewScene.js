@@ -6,7 +6,7 @@ import Heading from 'grommet/components/Heading';
 
 const CincyBrewScene = () => (
   <Box direction="row" justify="center" full="horizontal" align="center">
-        <Card thumbnail='http://via.placeholder.com/350x350'
+        <Card thumbnail='images/cincybrewscene.png'
           heading='CincyBrewScene'
           description="Use machine learning to plan a brewery crawl, we'll even call an Uber for you."
           link={<Anchor href='http://www.hackathon.io/cincybrewscene'

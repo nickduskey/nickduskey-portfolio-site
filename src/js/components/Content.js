@@ -32,7 +32,7 @@ export default class Content extends Component {
   }
 
   _onEndClick() {
-    scrollToTop.scroll(200);
+    scrollToTop.scroll(500);
   }
 
   render() {

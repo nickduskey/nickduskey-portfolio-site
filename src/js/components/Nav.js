@@ -12,6 +12,7 @@ import SocialShare from 'grommet/components/SocialShare';
 import GrommetLogo from
   'grommet/components/icons/base/BrandGrommetOutline';
 
+import scrollToTop from '../utils/scroll';
 import Progress from './Progress';
 
 const CLASS_ROOT = 'section-nav';
@@ -23,8 +24,20 @@ export default class Nav extends Component {
       layerActive: false
     };
 
+    this._scrollNav = this._scrollNav.bind(this);
     this._onClick = this._onClick.bind(this);
     this._onLayerClose = this._onLayerClose.bind(this);
+  }
+
+  _scrollNav(event) {
+    if (event.target.id === 'nav-home') {
+      scrollToTop.scroll(500);
+    } else if (event.target.id === 'nav-share') {
+      this.setState({layerActive: true})
+    } else if (event.target.id === 'nav-contact') {
+      console.log('nav-contact else block')
+      document.getElementById('contact-section').scrollIntoView();
+    }
   }
 
   _onClick() {
@@ -90,13 +103,13 @@ export default class Nav extends Component {
             icon={<MenuIcon/>}
             direction="row"
           >
-            <Anchor href="#">
+            <Anchor id="nav-home" href="#" onClick={this._scrollNav}>
               First Action
             </Anchor>
-            <Anchor href="#">
+            <Anchor id="nav-contact" href="#" onClick={this._scrollNav}>
               Second Action
             </Anchor>
-            <Anchor href="#">
+            <Anchor id="nav-share" href="#" onClick={this._scrollNav}>
               Third Action
             </Anchor>
           </Menu>

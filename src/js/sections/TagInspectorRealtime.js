@@ -6,7 +6,7 @@ import Heading from 'grommet/components/Heading';
 
 const TagInspectorRealtime = () => (
   <Box direction="row" justify="center" full="horizontal" align="center">
-        <Card thumbnail='http://via.placeholder.com/350x350'
+        <Card thumbnail='images/tirealtime.png'
           heading='Tag Inspector Realtime'
           description='Monitor marketing tag behavior in real time.'
           link={<Anchor href='https://taginspector.com/wp/realtime/'
