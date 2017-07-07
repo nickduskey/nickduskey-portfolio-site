@@ -33,9 +33,8 @@ export default class Nav extends Component {
     if (event.target.id === 'nav-home') {
       scrollToTop.scroll(500);
     } else if (event.target.id === 'nav-share') {
-      this.setState({layerActive: true})
+      this.setState({layerActive: true});
     } else if (event.target.id === 'nav-contact') {
-      console.log('nav-contact else block')
       document.getElementById('contact-section').scrollIntoView();
     }
   }
@@ -104,13 +103,13 @@ export default class Nav extends Component {
             direction="row"
           >
             <Anchor id="nav-home" href="#" onClick={this._scrollNav}>
-              First Action
+              Home
             </Anchor>
             <Anchor id="nav-contact" href="#" onClick={this._scrollNav}>
-              Second Action
+              Contact Me
             </Anchor>
             <Anchor id="nav-share" href="#" onClick={this._scrollNav}>
-              Third Action
+              Share
             </Anchor>
           </Menu>
           {navCta}
